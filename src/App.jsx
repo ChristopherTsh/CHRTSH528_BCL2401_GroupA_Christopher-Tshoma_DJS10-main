@@ -13,7 +13,7 @@ export default function App() {
     <div className="app-container">
       <Api setPosts={setPosts} setError={setError} />
       <h1>Post</h1>
-      <ol className="centered-list">
+      <ol className="centered-list"
         {posts.map((post) => (
           <li key={post.id}>
             <h2>{post.title}</h2>
