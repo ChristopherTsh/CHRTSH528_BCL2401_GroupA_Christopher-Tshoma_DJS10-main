@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, {useEffect } from 'react';
 
 export default function Api({setPosts,setError}) {
   
@@ -13,7 +13,7 @@ export default function Api({setPosts,setError}) {
         }
       })
       .then(data => setPosts(data))
-      .catch(error => setError(error.message));
+      .catch(error => setError("Data fetch failed"));
   }, [setPosts,setError]);
 
   return null

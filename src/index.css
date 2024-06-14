@@ -10,6 +10,13 @@
   padding-left: 0;
 }
 
-.centered-list li {
+.centered-list dd {
   text-align: center;
+
+}
+
+.Error{
+  text-align: center;
+  color: red;
+  font-size: 40px;
 }
